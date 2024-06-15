@@ -44,7 +44,7 @@
             <el-tabs v-model="activeName"  >
     <el-tab-pane label="User" name="first">
         <el-tree :data="data" @node-click="handleNodeClick">
-            laksjlads
+            
         </el-tree>
         
     </el-tab-pane>
@@ -58,9 +58,11 @@
     <el-drawer
   title="I am the title"
   :visible.sync="drawer"
-  direction="ttb"
+  direction="rtl"
+  size="60%"
   >
   <span>Hi, there!</span>
+  <embed src="https://firebasestorage.googleapis.com/v0/b/test-28615.appspot.com/o/mat01.pdf?alt=media&token=3e71b52a-67af-4f07-86a9-5c1d9a38163a" width="600px" height="400px" />
 </el-drawer>
 
     </div>
@@ -96,8 +98,8 @@
              handleNodeClick(data) {
         console.log(data);
         console.log(data.label);
-        if (data.label === 'МДК 02') {
-            <embed src="ссылка файла pdf" width="ширина в пикселях" height="высота в пикселях" />
+        if (data.label === 'Математика') {
+              this.drawer = true
     }
 }
 
